@@ -25,7 +25,7 @@ var base = /** @class */ (function () {
         this.teaser_img = teaser_img;
     }
     base.prototype.display = function () {
-        return "<div class=\"card\">\n                    <img src=\"" + this.teaser_img + "\" class=\"card-img-top\" alt=\"" + this.name + "\">\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title\">" + this.name + "</h5>\n                        <p class=\"card-text\">" + this.address + ", " + this.ZIP_code + " " + this.city + "</p>\n                    </div>\n                \t<div class=\"card-footer\">\n      \t\t\t\t\t<small class=\"text-muted\">Created: 24.10.2019 12:45 ago</small>\n      \t\t\t\t</div>\n    \t\t\t</div>";
+        return "<div class=\"col-sm-12 col-md-6 col-lg-6card\">\n                    <img src=\"" + this.teaser_img + "\" class=\"card-img-top\" alt=\"" + this.name + "\">\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title\">" + this.name + "</h5>\n                        <p class=\"card-text\">" + this.address + ", " + this.ZIP_code + " " + this.city + "</p>\n                    </div>\n                \t<div class=\"card-footer\">\n      \t\t\t\t\t<small class=\"text-muted\">Created: 24.10.2019 12:45 ago</small>\n      \t\t\t\t</div>\n    \t\t\t</div>";
     };
     return base;
 }());

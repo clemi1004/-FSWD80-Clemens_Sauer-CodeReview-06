@@ -14,7 +14,7 @@ class base {
 	}
 
 	display(){
-		return  `<div class="card">
+		return  `<div class="col-sm-12 col-md-6 col-lg-6card">
                     <img src="${this.teaser_img}" class="card-img-top" alt="${this.name}">
                     <div class="card-body">
                         <h5 class="card-title">${this.name}</h5>
@@ -30,7 +30,7 @@ class base {
 var sight_st_charles_church = new base("St. Charles Church", "Vienna", 1010, "Karlsplatz 1", "./img/st_charles_church.jpg")
 var sight_zoo_vienna = new base("Zoo Vienna", "Vienna", 1130, "Maxingstraße 13B", "./img/zoo_vienna.jpg")
 
-document.getElementById("places").innerHTML = (sight_st_charles_church.display() + sight_zoo_vienna.display();
+document.getElementById("places").innerHTML = (sight_st_charles_church.display() + sight_zoo_vienna.display());
 
 // Create a class based on the Person class and add some other properties like salary, jobLocation and a function that will call the function that is inside the Person class and add “and I get (salary) every month, and I work in (jobLocation)”
 
